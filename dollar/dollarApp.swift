@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct dollarApp: App {
+    var banks = Banks()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(banks)
         }
     }
 }
